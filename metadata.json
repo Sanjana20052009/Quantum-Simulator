@@ -1,0 +1,8 @@
+{
+  "name": "QubitLab — Quantum Gate Simulator",
+  "description": "Interactive quantum gate simulator with 3D Bloch sphere visualization, state tomography, custom amplitudes, finite-shot measurements, and challenge mode.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

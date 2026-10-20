@@ -1,0 +1,18 @@
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+
+# Allow example environment templates
+!.env.example
+
+# Node.js
+node_modules/
+frontend/dist/
+
+# Local editor files
+.vscode/
