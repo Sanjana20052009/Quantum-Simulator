@@ -708,37 +708,42 @@ button:disabled {
 .equation-formula-display {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   flex-wrap: wrap;
   font-family: var(--font-mono);
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
-  padding: 10px 12px;
-  background: rgba(13, 21, 39, 0.8);
-  border: 1px solid var(--border-subtle);
+  padding: 10px 14px;
+  background: #060e1d;
+  border: 1.5px solid #1f365d;
   border-radius: 10px;
   margin-bottom: 12px;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.4);
 }
 
 .coeff-badge-alpha {
-  color: var(--color-cyan);
-  background: rgba(56, 189, 248, 0.12);
-  padding: 2px 7px;
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.16);
+  padding: 3px 8px;
   border-radius: 6px;
-  border: 1px solid rgba(56, 189, 248, 0.3);
+  border: 1.5px solid rgba(56, 189, 248, 0.45);
+  font-weight: 800;
 }
 
 .coeff-badge-beta {
-  color: var(--color-rose);
-  background: rgba(251, 113, 133, 0.12);
-  padding: 2px 7px;
+  color: #fb7185;
+  background: rgba(251, 113, 133, 0.16);
+  padding: 3px 8px;
   border-radius: 6px;
-  border: 1px solid rgba(251, 113, 133, 0.3);
+  border: 1.5px solid rgba(251, 113, 133, 0.45);
+  font-weight: 800;
 }
 
 .equation-symbol {
-  color: var(--text-muted);
-  font-weight: 600;
+  color: #94a3b8;
+  font-weight: 700;
+  font-size: 16px;
 }
 
 /* State Presets Grid */
@@ -747,17 +752,21 @@ button:disabled {
   grid-template-columns: repeat(3, 1fr);
   gap: 6px;
   margin-bottom: 14px;
+  width: 100%;
 }
 
 .preset-pill-btn {
+  box-sizing: border-box;
+  width: 100%;
   padding: 8px 4px;
+  min-height: 34px;
   border-radius: 8px;
-  background: #0d1a33;
-  border: 1px solid #1f3760;
+  background: #0c1830;
+  border: 1.5px solid #1d365e;
   color: #cbd5e1;
   font-family: var(--font-mono);
   font-size: 11px;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
   cursor: pointer;
   transition: all 0.15s ease;
@@ -768,17 +777,17 @@ button:disabled {
 }
 
 .preset-pill-btn:hover {
-  background: #182e54;
+  background: #172d54;
   border-color: #38bdf8;
   color: #ffffff;
 }
 
 .preset-pill-btn.selected {
-  background: rgba(56, 189, 248, 0.22);
+  background: rgba(56, 189, 248, 0.25);
   border-color: #38bdf8;
   color: #38bdf8;
-  font-weight: 700;
-  box-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
+  font-weight: 800;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.35);
 }
 
 .amplitude-card {
@@ -819,6 +828,8 @@ button:disabled {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .amplitude-field-header-alpha {

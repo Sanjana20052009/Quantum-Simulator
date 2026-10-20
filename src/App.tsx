@@ -993,6 +993,7 @@ export default function App() {
                     {/* Quick State Presets */}
                     <div className="preset-pills" style={{ marginBottom: '14px' }}>
                       <button
+                        type="button"
                         className={`preset-pill-btn ${alphaVal > 0.99 ? 'selected' : ''}`}
                         onClick={() => setPresetState(1.0, 0.0, 1)}
                         title="|0⟩ Ground state (α=1, β=0)"
@@ -1000,6 +1001,7 @@ export default function App() {
                         |0⟩ Ground
                       </button>
                       <button
+                        type="button"
                         className={`preset-pill-btn ${betaVal > 0.99 ? 'selected' : ''}`}
                         onClick={() => setPresetState(0.0, 1.0, 1)}
                         title="|1⟩ Excited state (α=0, β=1)"
@@ -1007,20 +1009,23 @@ export default function App() {
                         |1⟩ Excited
                       </button>
                       <button
+                        type="button"
                         className={`preset-pill-btn ${Math.abs(alphaVal - 0.7071) < 0.02 && betaSign === 1 ? 'selected' : ''}`}
                         onClick={() => setPresetState(Math.SQRT1_2, Math.SQRT1_2, 1)}
                         title="|+⟩ Equal Superposition (α=0.707, β=+0.707)"
                       >
-                        |+⟩ Superpos
+                        |+⟩ Plus
                       </button>
                       <button
+                        type="button"
                         className={`preset-pill-btn ${Math.abs(alphaVal - 0.7071) < 0.02 && betaSign === -1 ? 'selected' : ''}`}
                         onClick={() => setPresetState(Math.SQRT1_2, Math.SQRT1_2, -1)}
                         title="|−⟩ Phase Inverted (α=0.707, β=−0.707)"
                       >
-                        |−⟩ Inverted
+                        |−⟩ Minus
                       </button>
                       <button
+                        type="button"
                         className={`preset-pill-btn ${Math.abs(alphaVal - 0.866) < 0.02 ? 'selected' : ''}`}
                         onClick={() => setPresetState(0.866, 0.5, 1)}
                         title="|30°⟩ Superposition (α=0.866, β=0.500)"
@@ -1028,6 +1033,7 @@ export default function App() {
                         |30°⟩ State
                       </button>
                       <button
+                        type="button"
                         className={`preset-pill-btn ${Math.abs(alphaVal - 0.5) < 0.02 ? 'selected' : ''}`}
                         onClick={() => setPresetState(0.5, 0.866, 1)}
                         title="|60°⟩ Superposition (α=0.500, β=0.866)"
